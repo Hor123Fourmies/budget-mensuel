@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>budget-mensuel</title>
+    <meta name="Viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div>
+<div>
+    <h2>BUDGET MENSUEL</h2>
+
+    <div id="DepRec">
+
+        <div id="divDepenses">
+
+            <h3>Dépenses</h3>
+
+            <div class="ligne">
+                <div class="intituleDepenses">
+                    <h4>Dépenses fixes</h4>
+                </div>
+                <div class="divInput">
+                </div>
+            </div>
+
+            <div class="ligne">
+                <div class="intituleDepenses">Loyer et charges :</div>
+                <div class="divInput">
+                    <input id="ilc" value="0">
+                </div>
+            </div>
+
+            <div class="ligne">
+                <div class="intituleDepenses">Remboursements de crédits :</div>
+                <div class="divInput">
+                    <input id="irc" value="0">
+                </div>
+            </div>
+
+            <div class="ligne">
+                <div class="intituleDepenses">Eau/Electricité/Gaz :</div>
+                <div class="divInput">
+                    <input id="ieeg" value="0">
+                </div>
+            </div>
+
+            <div class="ligne">
+                <div class="intituleDepenses">Téléphone - Internet :</div>
+                <div class="divInput">
+                    <input id="iti" value="0">
+                </div>
+            </div>
+
+            <div class="ligne">
+                <div class="intituleDepenses">Assurance habitation :</div>
+                <div class="divInput">
+                    <input id="iah" value="0">
+                </div>
+            </div>
+
+
+            <div class="ligne">
+                <div class="intituleDepenses">
+                    <h4>Dépenses courantes</h4>
+                </div>
+                <div class="divInput">
+                </div>
+            </div>
+
+            <div class="ligne">
+                <div class="intituleDepenses">Courses :</div>
+                <div class="divInput">
+                    <input id="ic" value="0">
+                </div>
+            </div>
+
+            <div class="ligne">
+                <div class="intituleDepenses">Essence/Frais de transport en commun :</div>
+                <div class="divInput">
+                    <input id="ieftc" value="0">
+                </div>
+            </div>
+
+            <div class="ligne">
+                <div class="intituleDepenses">Activités sportives et culturelles :</div>
+                <div class="divInput">
+                    <input id="iasc" value="0">
+                </div>
+            </div>
+
+
+            <div class="ligne">
+                <div class="intituleDepenses">
+                    <h4>Dépenses occasionnelles</h4>
+                </div>
+                <div class="divInput">
+                </div>
+            </div>
+
+
+            <div class="ligne">
+                <div class="intituleDepenses">Sorties :</div>
+                <div class="divInput">
+                    <input id="is" value="0">
+                </div>
+            </div>
+
+            <div id="espaceChampAjoutDepenses">
+
+            </div>
+            <button id="boutonDepenses">Calcul sous-total dépenses</button>
+
+            <div class="ligne">
+                <div class="intituleDepenses total">Sous-total :</div>
+                <div class="divInput" >
+                    <input id="itd">
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="recettes">
+
+            <h3>Recettes</h3>
+
+            <div class="ligne">
+                <div class="intituleRecettes">
+                    <h4>Recettes</h4>
+                </div>
+                <div class="divInput">
+                </div>
+            </div>
+
+            <div class="ligne">
+                <div class="intituleRecettes">Salaire :</div>
+                <div class="divInput">
+                    <input id="isalaire" value="0">
+                </div>
+            </div>
+
+            <div class="ligne">
+                <div class="intituleRecettes">Aides :</div>
+                <div class="divInput">
+                    <input id="iaides" value="0">
+                </div>
+            </div>
+
+            <div class="ligne">
+                <div class="intituleRecettes">Rentes :</div>
+                <div class="divInput">
+                    <input id="irentes" value="0">
+                </div>
+            </div>
+
+            <div class="ligne">
+                <div class="intituleRecettes">Autres :</div>
+                <div class="divInput">
+                    <input id="iautres" value="0">
+                </div>
+            </div>
+
+            <div id="espaceChampAjoutRecettes"></div>
+
+            <button id="boutonRecettes">Calcul sous-total recettes</button>
+
+            <div class="ligne">
+                <div class="intituleRecettes total">Sous-total :</div>
+                <div class="divInput" >
+                    <input id="itr">
+                </div>
+            </div>
+
+            <div id="divAjoutChampRecettes">
+                <button id="boutonAjouterChampRecettes">Ajouter un champ recettes</button>
+            </div>
+
+        </div>
+
+        <div id="balance">
+
+            <h3>Balance</h3>
+
+            <div class="ligne">
+                <div>
+                    <h4>Balance</h4>
+                </div>
+                <div class="divInput">
+                </div>
+            </div>
+
+            <div id="divBalance">
+                <button id="boutonBalance">Calcul balance</button>
+                <input id="inputBalance">
+                <div id="suggestion"></div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+<div id="divAjoutChamp">
+    <button id="boutonAjouterChamp">Ajouter un champ dépenses</button>
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+<!--
+
+
+                        <li></li>
+                        <li></li>
+                        <li>Assurance véhicules :</li>
+                        <li>Mutuelle santé :</li>
+                        <li>Frais de garde :</li>
+                        <li>Impôts sur le revenu :</li>
+                        <li>Impôts locaux :</li>
+                    </ul>
+                </div>
+
+            <div id="divInput">
+                <ul>
+                    <li><input></li>
+                    <li><input></li>
+                    <li><input></li>
+                    <li><input></li>
+                    <li><input></li>
+                </ul>
+
+            </div>
+
+            <div id="divResultatDepenses">
+                <li class="resultat"></li>
+                <li class="resultat"></li>
+                <li class="resultat"></li>
+                <li class="resultat"></li>
+            </div>
+            </div>
+
+                    <li>Assurance véhicules :</li>
+                    <li>Mutuelle santé :</li>
+                    <li>Frais de garde :</li>
+                    <li>Impôts sur le revenu :</li>
+                    <li>Impôts locaux :</li>
+
+                </ul>
+
+            </div>
+        -->
